@@ -1,0 +1,22 @@
+<b class="block">{{ detail.position }} at {{ detail.employer }}</b>
+<i>
+  {{ detail.startDate | date: 'MMM yyyy' }} -&nbsp;
+  <ng-container *ngIf="detail.endDate">{{
+    detail.endDate | date: 'MMM yyyy'
+  }}</ng-container>
+  <ng-container *ngIf="!detail.endDate">Present</ng-container>
+</i>
+
+<ul class="block list-disc m-4">
+  <li *ngFor="let responsibility of detail.responsibilities" class="mb-2">
+    {{ responsibility.text }}
+    <ul
+      *ngIf="responsibility.subtext?.length > 0"
+      class="list-circle ml-8 mt-2"
+    >
+      <li *ngFor="let subtext of responsibility.subtext">
+        {{ subtext }}
+      </li>
+    </ul>
+  </li>
+</ul>

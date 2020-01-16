@@ -1,0 +1,50 @@
+<article class="page grid cg-4 rg-4 home">
+  <section class="home__name m-auto md:m-0 md:mt-auto">
+    <h1 class="text-3xl">Rob Denman</h1>
+    <p>Software Engineer</p>
+  </section>
+  <section class="home__photo m-auto md:m-0">
+    <img class="rounded-full" src="assets/images/me.webp" alt="Rob Denman" />
+  </section>
+  <section class="home__about">
+    <home-header display="About Me"></home-header>
+    <p>
+      Experienced full-stack software engineer adept in producing quality,
+      custom software solutions. Proficient in an array of programming
+      languages, frameworks, and libraries, in addition to being equipped with a
+      desire to continually enrich my skillset. Able to self-manage during
+      independent projects, as well as collaborate and lead a productive, agile
+      team. Detail-oriented and a stickler for delivering clean, maintainable,
+      and highly performant code.
+    </p>
+  </section>
+  <section class="home__work">
+    <home-header display="Work Experience"></home-header>
+    <home-work-detail
+      *ngFor="let work of workDetails"
+      [detail]="work"
+    ></home-work-detail>
+  </section>
+  <section class="home__skills">
+    <home-header display="Skills"></home-header>
+    <p class="mb-4">
+      Web Development &bull; Project Management &bull; Automation
+    </p>
+    <p class="mb-4">JavaScript &bull; Java &bull; Groovy &bull; SQL</p>
+    <p class="mb-4">
+      Angular &bull; AngularJS &bull; React &bull; Typescript &bull; Node &bull;
+      Express &bull; Spring &bull; Hibernate &bull; XSLT &bull; FOP &bull;
+      Docker &bull; Git &bull; Jenkins
+    </p>
+  </section>
+  <section class="home__education">
+    <home-header display="Education"></home-header>
+    <p>
+      Bachelor of Computer Science & Minor in Applied Mathematics, Metropolitan
+      State University
+    </p>
+    <p>
+      Graduated May 2017
+    </p>
+  </section>
+</article>

@@ -1,0 +1,15 @@
+<header class="fixed w-full h-12 text-white bg-gray-700 shadow-md">
+  <nav>
+    <ul>
+      <li *ngFor="let item of items" class="float-left">
+        <a
+          class="block py-3 px-4 hover:bg-gray-600"
+          [routerLink]="item.path"
+          routerLinkActive="bg-purple-600"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >{{ item.display }}</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>

@@ -1,0 +1,41 @@
+.home {
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'photo'
+    'name'
+    'about'
+    'skills'
+    'work'
+    'education';
+}
+@screen md {
+  .home {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      'name photo'
+      'work about'
+      'work education'
+      'work skills';
+  }
+}
+
+// grid definitions
+.home__name {
+  grid-area: name;
+}
+.home__photo {
+  grid-area: photo;
+}
+.home__about {
+  grid-area: about;
+}
+.home__work {
+  grid-area: work;
+}
+.home__education {
+  grid-area: education;
+}
+.home__skills {
+  grid-area: skills;
+}

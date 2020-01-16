@@ -1,0 +1,10 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Building Your Resume as a PWA",
+      "file": "01-pwa-resume.md",
+      "created": "01/20/2020"
+    }
+  ]
+}
