@@ -3,7 +3,7 @@
     <ul>
       <li *ngFor="let item of items" class="float-left">
         <a
-          class="block py-3 px-4 hover:bg-gray-600"
+          class="block py-3 px-4 hover:bg-gray-600 transition"
           [routerLink]="item.path"
           routerLinkActive="bg-purple-600"
           [routerLinkActiveOptions]="{ exact: true }"

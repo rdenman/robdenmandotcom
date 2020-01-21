@@ -20,6 +20,12 @@
   }
 }
 
+@screen md {
+  .home__page {
+    @apply m-8 p-4 border shadow-lg;
+  }
+}
+
 // grid definitions
 .home__name {
   grid-area: name;

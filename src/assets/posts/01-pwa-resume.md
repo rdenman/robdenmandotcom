@@ -20,7 +20,7 @@ so it'd be helpful to have [Node](https://nodejs.org/en/) installed as well.
 
 Start by creating your project folder, along with a few files:
 
-```properties
+```bash
 mkdir pwa-resume
 cd pwa-resume
 touch index.html
@@ -73,7 +73,7 @@ from blocking the rending of the page's content.
 At this point, you could open your `index.html` file directly with your browser. However, better approach would be to spin up a local HTTP server - you can do so
 easily with [http-server](https://www.npmjs.com/package/http-server):
 
-```properties
+```bash
 npm install -g http-server
 http-server -p 8080
 ```

@@ -5,7 +5,8 @@
     "start": "ng serve --no-live-reload",
     "build": "ng build --prod",
     "test": "ng test",
-    "server": "npm run build && http-server -p 8000 -c-1 dist/robdenmandotcom"
+    "server": "cd dist/robdenmandotcom && spa-server-gzip -p 8000",
+    "postbuild": "gulp compress"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +20,8 @@
     "@angular/pwa": "^0.803.23",
     "@angular/router": "~8.2.14",
     "@angular/service-worker": "~8.2.14",
+    "ngx-markdown": "^8.2.1",
+    "prismjs": "^1.19.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
@@ -29,11 +32,14 @@
     "@angular/cli": "~8.3.23",
     "@angular/compiler-cli": "~8.2.14",
     "@angular/language-service": "~8.2.14",
+    "@fullhuman/postcss-purgecss": "^2.0.5",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
+    "angular-http-server": "^1.9.0",
     "codelyzer": "^5.0.0",
-    "http-server": "^0.12.1",
+    "gulp": "^4.0.2",
+    "gulp-gzip": "^1.4.2",
     "husky": "^4.0.10",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
@@ -48,6 +54,7 @@
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1",
     "protractor": "~5.4.0",
+    "spa-server-gzip": "^1.9.1",
     "stylelint": "^13.0.0",
     "stylelint-config-recommended": "^3.0.0",
     "tailwindcss": "^1.1.4",

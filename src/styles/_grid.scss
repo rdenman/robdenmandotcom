@@ -1,0 +1,13 @@
+$size-4: 1rem;
+
+.grid {
+  display: grid;
+}
+
+.cg-4 {
+  column-gap: $size-4;
+}
+
+.rg-4 {
+  row-gap: $size-4;
+}
