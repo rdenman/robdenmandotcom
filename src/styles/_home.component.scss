@@ -20,6 +20,9 @@
   }
 }
 
+.home__page {
+  @apply m-4;
+}
 @screen md {
   .home__page {
     @apply m-8 p-4 border shadow-lg;

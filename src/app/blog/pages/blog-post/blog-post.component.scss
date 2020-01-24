@@ -1,1 +1,17 @@
 @import '../../../../../node_modules/prismjs/themes/prism-okaidia.css';
+
+img {
+  display: block;
+  height: auto;
+  margin: auto;
+  max-width: 100%;
+}
+
+.container {
+  margin: 2rem;
+}
+@media (min-width: 768px) {
+  .container {
+    margin: 2rem 10rem;
+  }
+}

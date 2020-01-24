@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "public": "dist/robdenmandotcom",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "cleanUrls": true
+  }
+}

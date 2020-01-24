@@ -1,7 +1,7 @@
 {
   "name": "robdenmandotcom",
   "short_name": "robdenmandotcom",
-  "theme_color": "#6e0eec",
+  "theme_color": "#805ad5",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "/",
